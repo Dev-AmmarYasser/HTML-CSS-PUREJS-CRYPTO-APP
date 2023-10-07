@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Template</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navigation -->
+
+    <nav>
+      <div class="row align-items-center">
+        <div class="col-lg-2 col-6 logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+
+        <div class="col-lg-5 search d-lg-block d-none">
+          <form action="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </form>
+        </div>
+        <div
+          class="col-lg-3 col-2 d-flex justify-content-md-end justify-content-sm-center"
+        >
+          <div class="switch">
+            <div class="icon d-flex align-items-center">
+              <i class="fa-solid fa-sun bullet"></i>
+            </div>
+            <div class="icon d-flex align-items-center active">
+              <i class="fa-solid fa-moon bullet"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-4">
+          <div
+            class="user d-flex align-items-center gap-2 gap-md-4 justify-content-end"
+          >
+            <div class="avatar d-flex align-items-center gap-3">
+              <img class="rounded-circle" src="images/profile-1.jpg" alt="" />
+              <p class="m-0 fw-bold d-none d-sm-block">Chu Hug</p>
+            </div>
+            <div class="drop-down cursor-pointer">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row w-100">
+      <div class="col-lg-2 side-bar">
+        <aside class="d-flex flex-column justify-content-between">
+          <ul class="list-unstyled">
+            <li class="d-flex gap-4 active align-items-center">
+              <span class="material-icons">dashboard</span>
+              <h4>Dashboard</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons" style="font-weight: bold"
+                >currency_exchange</span
+              >
+              <h4>Exchange</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons">account_balance_wallet</span>
+              <h4>Wallet</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons">payment</span>
+              <h4>Transactions</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons">pie_chart</span>
+              <h4>Analytics</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons">message</span>
+              <h4>Messages</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons">help_center</span>
+              <h4>Help Center</h4>
+            </li>
+            <li class="d-flex gap-4 align-items-center">
+              <span class="material-icons">settings</span>
+              <h4>Settings</h4>
+            </li>
+          </ul>
+
+          <div
+            class="card text-center border-0"
+            style="margin: 0 10px; border-radius: 20px"
+          >
+            <div class="card-body">
+              <span class="material-icons" style="font-size: 40px">update</span>
+              <h5 class="card-title fw-bold">Updates Available</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                security updates<br />General Updates
+              </h6>
+              <button class="btn text-light">Update Now</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="col-12 col-lg-10">
+        <section>
+          <div class="head d-flex align-items-center gap-4 p-4">
+            <h2 class="h1 fw-bold">Overview</h2>
+            <code class="text-black-50 bg-white">mm / dd / yyyy</code>
+          </div>
+          <div class="cards">
+            <div class="debit-card btc" style="height: 270px">
+              <div
+                class="card-head d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img class="btc" src="images/BTC.png" alt="" />
+                  <p class="text-light m-0 fs-5">BTC</p>
+                </div>
+                <img style="width: 60px" src="images/visa.png" alt="" />
+              </div>
+              <div
+                class="debit-card-body position-relative d-flex justify-content-between"
+              >
+                <div class="cont w-100">
+                  <div class="info text-light">
+                    <h2 class="fw-bold text-light">$34,876</h2>
+                  </div>
+                  <div
+                    class="holder-info text-light justify-content-between w-100 d-flex gap-4 position-relative"
+                  >
+                    <div class="info-bulk text-center">
+                      <p class="">Card Holder</p>
+                      <p class="text-uppercase fs-6">John Doe</p>
+                    </div>
+                    <div class="left d-flex gap-4">
+                      <div class="info-bulk text-center">
+                        <p class="">Expiry</p>
+                        <p class="text-uppercase">06 / 24</p>
+                      </div>
+                      <div class="info-bulk text-center">
+                        <p class="">CCV</p>
+                        <p class="text-uppercase">123</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chip position-absolute" style="right: 0">
+                  <img src="images/card chip.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="debit-card eht" style="height: 270px">
+              <div
+                class="card-head d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img class="btc" src="images/ETH.png" alt="" />
+                  <p class="text-light m-0 fs-5">EHT</p>
+                </div>
+                <img style="width: 60px" src="images/master card.png" alt="" />
+              </div>
+              <div
+                class="debit-card-body w-100 d-flex justify-content-between position-relative"
+              >
+                <div class="info w-100 text-light d-flex">
+                  <h2 class="fw-bold fs-2 text-light">$34,876</h2>
+                  <div
+                    class="holder-info text-center w-100 d-flex justify-content-between"
+                  >
+                    <div class="info-bulk">
+                      <p class="">Card Holder</p>
+                      <p class="text-uppercase fs-6">John Doe</p>
+                    </div>
+                    <div class="left d-flex gap-4">
+                      <div class="info-bulk">
+                        <p class="">Expiry</p>
+                        <p class="">06 / 24</p>
+                      </div>
+                      <div class="info-bulk">
+                        <p class="">CCV</p>
+                        <p class="">123</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chip position-absolute" style="right: 0">
+                  <img src="images/card chip.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="debit-card btc-2" style="height: 270px">
+              <div
+                class="card-head d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img class="btc" src="images/BTC.png" alt="" />
+                  <p class="text-light m-0 fs-5">EHT</p>
+                </div>
+                <img style="width: 60px" src="images/visa.png" alt="" />
+              </div>
+              <div
+                class="debit-card-body position-relative d-flex justify-content-between"
+              >
+                <div class="info w-100 text-light">
+                  <h2 class="fw-bold fs-2 text-light">$34,876</h2>
+                  <div
+                    class="holder-info text-center d-flex justify-content-between"
+                  >
+                    <div class="info-bulk">
+                      <p class="">Card Holder</p>
+                      <p class="text-uppercase fs-6">John Doe</p>
+                    </div>
+                    <div class="left d-flex gap-4">
+                      <div class="info-bulk">
+                        <p class="">Expiry</p>
+                        <p class="">06 / 24</p>
+                      </div>
+                      <div class="info-bulk">
+                        <p class="">CCV</p>
+                        <p class="">123</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chip position-absolute" style="right: 0">
+                  <img src="images/card chip.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="row mt-5">
+              <div class="col-lg-3 mb-3 mb-lg-0">
+                <div class="income indicator">
+                  <h4 class="fw-bold" style="font-size: 22px">Income</h4>
+                  <div class="details income">
+                    <div class="icon d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-caret-down"></i>
+                      <h4 class="m-0" style="font-size: 17px">Details</h4>
+                    </div>
+                  </div>
+                  <div class="info active">
+                    <h2 class="fw-bold my-2">$34,987</h2>
+                    <p class="fw-bold success mt-1 mb-0">+2.9%</p>
+                  </div>
+                  <p
+                    class="text-black-50 m-0 user-select-none"
+                    style="font-size: 15px"
+                  >
+                    Compared to $23,459 last month
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3 mb-lg-0">
+                <div class="expenses indicator">
+                  <h4 class="fw-bold" style="font-size: 22px">Expenses</h4>
+                  <div class="details">
+                    <div class="icon d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-caret-down"></i>
+                      <h4 class="m-0" style="font-size: 17px">Details</h4>
+                    </div>
+                  </div>
+                  <div class="info active">
+                    <h2 class="fw-bold my-2">$9,987</h2>
+                    <p class="fw-bold danger mt-1 mb-0">-6.5%</p>
+                  </div>
+                  <p class="text-black-50 m-0" style="font-size: 15px">
+                    Compared to $11,867 last month
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3 mb-lg-0">
+                <div class="cashback indicator">
+                  <h4 class="fw-bold" style="font-size: 22px">Cashback</h4>
+                  <div class="details">
+                    <div class="icon d-flex gap-2 align-items-center">
+                      <i class="fa-solid fa-caret-down"></i>
+                      <h4 class="m-0" style="font-size: 17px">Details</h4>
+                    </div>
+                  </div>
+                  <div class="info active">
+                    <h2 class="fw-bold my-2">$3,987</h2>
+                    <p class="fw-bold danger mt-1 mb-0">+7.1%</p>
+                  </div>
+                  <p class="text-black-50 m-0" style="font-size: 15px">
+                    Compared to $26,459 last month
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3 mb-lg-0">
+                <div class="income-2 indicator">
+                  <h4 class="fw-bold" style="font-size: 22px">Income</h4>
+                  <div class="details">
+                    <div class="icon d-flex gap-2 align-items-center">
+                      <i class="fa-solid fa-caret-down dropdown"></i>
+                      <h4 class="m-0" style="font-size: 17px">Details</h4>
+                    </div>
+                    <div class="info">
+                      <h2 class="fw-bold my-2 click">$3,987</h2>
+                      <p class="fw-bold danger mt-1 mb-0 click">+7.1%</p>
+                    </div>
+                    <p class="text-black-50" style="font-size: 15px">
+                      Compared to $23,459 last month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fast-payment my-5">
+            <div
+              class="fast-payment-header d-flex flex-column flex-lg-row gap-5 align-items-center"
+            >
+              <h2 class="fw-bold m-0">Fast Payment</h2>
+              <div class="fast-payment-buttons gap-3 d-flex flex-wrap">
+                <div class="add item">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="training item">
+                  <p>Training</p>
+                  <p class="fw-bold">$50</p>
+                </div>
+                <div class="internet item">
+                  <p>Internet</p>
+                  <p class="fw-bold">$40</p>
+                </div>
+                <div class="gas item">
+                  <p>Gas</p>
+                  <p class="fw-bold">$190</p>
+                </div>
+                <div class="movies item">
+                  <p>Movies</p>
+                  <p class="fw-bold">$35</p>
+                </div>
+                <div class="education item">
+                  <p>Education</p>
+                  <p class="fw-bold">$999</p>
+                </div>
+                <div class="electricity item">
+                  <p>Electricity</p>
+                  <p class="fw-bold">$109</p>
+                </div>
+                <div class="food item">
+                  <p>Food</p>
+                  <p class="fw-bold">$399</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <canvas
+            class="mb-5 d-flex flex-column flex-lg-row"
+            id="chart"
+          ></canvas>
+        </section>
+      </div>
+      <div class="col">
+        <section style="margin-left: 20px">
+          <div class="investments bg-white my-3" style="border-radius: 15px">
+            <div
+              class="invest-header p-4 d-flex justify-content-between align-items-center"
+            >
+              <h2 class="fw-bold m-0 fs-4">Investments</h2>
+              <div class="more d-flex align-items-center gap-2">
+                <p class="primary m-0">More</p>
+                <i
+                  class="fa-solid fa-angle-right primary fw-bold"
+                  style="font-size: 20px"
+                ></i>
+              </div>
+            </div>
+            <div class="invest-body">
+              <div
+                class="invest-item p-4 mt-2 d-flex justify-content-between align-items-center"
+              >
+                <img src="images/uniliver.png" alt="" style="width: 50px" />
+                <h6 class="fw-bold m-0" style="font-size: 18px">Uniliver</h6>
+                <div class="date">
+                  <p class="mb-1">7 Nov,2021</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">
+                    9:14pm
+                  </p>
+                </div>
+                <div class="bonds">
+                  <p class="mb-1">1402</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">Bonds</p>
+                </div>
+                <div class="money">
+                  <h5 class="fw-bold mb-1">$23,876</h5>
+                  <p class="danger m-0">-4.27%</p>
+                </div>
+              </div>
+              <div
+                class="invest-item p-4 d-flex justify-content-between align-items-center"
+              >
+                <img src="images/tesla.png" alt="" style="width: 50px" />
+                <h6 class="fw-bold m-0" style="font-size: 18px">Tesla</h6>
+                <div class="date">
+                  <p class="mb-1">7 Nov,2021</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">
+                    9:14pm
+                  </p>
+                </div>
+                <div class="bonds">
+                  <p class="mb-1">1402</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">Bonds</p>
+                </div>
+                <div class="money">
+                  <h5 class="fw-bold mb-1">$23,876</h5>
+                  <p class="success m-0">34.27%</p>
+                </div>
+              </div>
+              <div
+                class="invest-item p-4 d-flex justify-content-between align-items-center"
+              >
+                <img src="images/monster.png" alt="" style="width: 50px" />
+                <h6 class="fw-bold m-0" style="font-size: 18px">Monster</h6>
+                <div class="date">
+                  <p class="mb-1">7 Nov,2021</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">
+                    9:14pm
+                  </p>
+                </div>
+                <div class="bonds">
+                  <p class="mb-1">1402</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">Bonds</p>
+                </div>
+                <div class="money">
+                  <h5 class="fw-bold mb-1">$23,876</h5>
+                  <p class="success m-0">38.56%</p>
+                </div>
+              </div>
+              <div
+                class="invest-item p-4 d-flex justify-content-between align-items-center"
+              >
+                <img src="images/mcdonalds.png" alt="" style="width: 50px" />
+                <h6 class="fw-bold m-0" style="font-size: 18px">McDonalds</h6>
+                <div class="date">
+                  <p class="mb-1">7 Nov,2021</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">
+                    9:14pm
+                  </p>
+                </div>
+                <div class="bonds">
+                  <p class="mb-1">1402</p>
+                  <p class="text-black-50 m-0" style="font-size: 14px">Bonds</p>
+                </div>
+                <div class="money">
+                  <h5 class="fw-bold mb-1">$23,876</h5>
+                  <p class="danger m-0">-4.27%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recent-transactions">
+            <div class="recent-header d-flex justify-content-between mt-5">
+              <h2 class="fw-bold fs-4">Recent Transactions</h2>
+              <div class="more d-flex align-items-center gap-2">
+                <p class="primary m-0">More</p>
+                <i
+                  class="fa-solid fa-angle-right primary fw-bold"
+                  style="font-size: 20px"
+                ></i>
+              </div>
+            </div>
+            <div class="recent-body">
+              <div class="recent-item mt-2 d-flex gap-5 align-items-center">
+                <div class="left d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-headphones"></i>
+                  <div class="info">
+                    <h4 class="mb-1 fw-bold fs-5">Quran</h4>
+                    <p class="text-black-50 m-0" style="font-size: 14px">
+                      20.11.2021
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="right gap-3 flex-grow-1 align-items-center d-flex justify-content-between"
+                >
+                  <div class="left gap-3 d-flex align-items-center">
+                    <div class="img">
+                      <img src="images/visa.png" alt="" style="width: 90px" />
+                    </div>
+                    <div class="info">
+                      <p class="mb-1">+2356</p>
+                      <p class="text-black-50 m-0" style="font-size: 14px">
+                        Credit Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="right d-flex position-relative">
+                    <p class="m-0 fw-bold fs-6">-$20</p>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-item mt-2 d-flex gap-4 align-items-center">
+                <div class="left d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <div class="info">
+                    <h4 class="mb-1 fw-bold fs-5">Shopping</h4>
+                    <p class="text-black-50 m-0" style="font-size: 14px">
+                      20.11.2021
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="right gap-3 flex-grow-1 align-items-center d-flex justify-content-between"
+                >
+                  <div class="left gap-3 d-flex align-items-center">
+                    <div class="img">
+                      <img src="images/visa.png" alt="" style="width: 90px" />
+                    </div>
+                    <div class="info">
+                      <p class="mb-1">+2356</p>
+                      <p class="text-black-50 m-0" style="font-size: 14px">
+                        Credit Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="right d-flex position-relative">
+                    <p class="m-0 fw-bold fs-6">-$799</p>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-item mt-2 d-flex gap-4 align-items-center">
+                <div class="left d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-utensils"></i>
+                  <div class="info">
+                    <h4 class="mb-1 fw-bold fs-5">Restaurant</h4>
+                    <p class="text-black-50 m-0" style="font-size: 14px">
+                      20.11.2021
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="right gap-3 flex-grow-1 align-items-center d-flex justify-content-between"
+                >
+                  <div class="left gap-3 d-flex align-items-center">
+                    <div class="img">
+                      <img
+                        src="images/master card.png"
+                        alt=""
+                        style="width: 80px"
+                      />
+                    </div>
+                    <div class="info">
+                      <p class="mb-1">+2356</p>
+                      <p class="text-black-50 m-0" style="font-size: 14px">
+                        Credit Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="right d-flex position-relative">
+                    <p class="m-0 fw-bold fs-6">-$799</p>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-item mt-2 d-flex gap-4 align-items-center">
+                <div class="left d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <div class="info">
+                    <h4 class="mb-1 fw-bold fs-5">Games</h4>
+                    <p class="text-black-50 m-0" style="font-size: 14px">
+                      20.11.2021
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="right gap-3 flex-grow-1 align-items-center d-flex justify-content-between"
+                >
+                  <div class="left gap-3 d-flex align-items-center">
+                    <div class="img">
+                      <img src="images/visa.png" alt="" style="width: 90px" />
+                    </div>
+                    <div class="info">
+                      <p class="mb-1">+2356</p>
+                      <p class="text-black-50 m-0" style="font-size: 14px">
+                        Credit Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="right d-flex position-relative">
+                    <p class="m-0 fw-bold fs-6">-$799</p>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-item mt-2 d-flex gap-4 align-items-center">
+                <div class="left d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-prescription-bottle-medical"></i>
+                  <div class="info">
+                    <h4 class="mb-1 fw-bold fs-5">Pharmacy</h4>
+                    <p class="text-black-50 m-0" style="font-size: 14px">
+                      20.11.2021
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="right gap-3 flex-grow-1 align-items-center d-flex justify-content-between"
+                >
+                  <div class="left gap-3 d-flex align-items-center">
+                    <div class="img">
+                      <img src="images/visa.png" alt="" style="width: 90px" />
+                    </div>
+                    <div class="info">
+                      <p class="mb-1">+2356</p>
+                      <p class="text-black-50 m-0" style="font-size: 14px">
+                        Credit Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="right d-flex position-relative">
+                    <p class="m-0 fw-bold fs-6">-$799</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- End Navigation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
+      integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
